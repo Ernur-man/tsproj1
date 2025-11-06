@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "../../public/digiency.webp",
+        "title": "Hazel - Clean Minimalist Multi-Pu...",
+        "price": 50,
+        "sold": 258
+    },
+    {
+        "id": 2,
+        "img": "../../public/apolly.webp",
+        "title": "Monstroid2 - Multipurpose Modular...",
+        "price": 50,
+        "sold": 258
+    },
+    {
+        "id": 3,
+        "img": "../../public/digiency.webp",
+        "title": "Techno - IT Solutions & Business ...",
+        "price": 50,
+        "sold": 258
+    },
+    {
+        "id": 4,
+        "img": "../../public/apolly.webp",
+        "title": "Hazel - Clean Minimalist Multi-Pu...",
+        "price": 50,
+        "sold": 258
+    },
+    {
+        "id": 5,
+        "img": "../../public/digiency.webp",
+        "title": "Monstroid2 - Multipurpose Modular...",
+        "price": 50,
+        "sold": 258
+    },
+    {
+        "id": 6,
+        "img": "../../public/apolly.webp",
+        "title": "Techno - IT Solutions & Business ...",
+        "price": 50,
+        "sold": 258
+    }
+]

@@ -1,0 +1,74 @@
+@import '../less/reset.less';
+
+
+header{
+    width: 100%;
+    padding: 30px 24px 30px 24px;
+    z-index: 9999999999999;
+    .container{
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+        background:  rgba(255, 255, 255, 1);
+        border-radius: 10px;
+        width: 1200px;
+        margin: 0 auto;
+        .flex_between;
+        article{
+            .flex_center;
+            width: 40%;
+            aside, >div{
+                border: none;
+                outline: none;
+                border-radius: 5px;
+                padding: 18px 40px;
+                background:  linear-gradient(224.59deg, rgba(2, 131, 233, 1),rgba(252, 1, 202, 1) 100%);
+                .txt;
+                color: white;
+            }
+            img{
+                margin-right: 30px;
+            }
+            aside{
+                width: 100%;
+                padding-right: 20px;
+                .list{
+                    text-align: right;
+                    width: 100%;
+                    color: black;
+                    position: absolute;
+                    background: rgba(255, 255, 255, 0.219);
+                    top: 100%;
+                    transform: translateX(-40px);
+                    padding: 10px;
+                    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.237);
+                    border-radius: 0 0 10px 10px;
+                    transition: 0.3s;
+                    opacity: 0;
+                    li{
+                        margin-bottom: 10px;
+                    }
+                }
+                
+                .list .active{
+                    .list;
+                    opacity: 1;
+                }
+            }
+            >div{
+                display: flex;
+                margin-right: 13px;
+                padding: 12px;
+                font-size: 24px;
+            }
+            .menu{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h4{
+                        font-size: 16px;
+                    }
+                }
+            
+        }
+    }
+}
+

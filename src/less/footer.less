@@ -1,0 +1,79 @@
+@import '../less/reset.less';
+
+
+
+.footer{
+    width: 100%;
+    padding-bottom: 100px;
+    background:  rgba(43, 43, 43, 1);
+    color: white;
+    position: relative;
+    >aside{
+        width: 100%;
+        height: 200px;
+        padding-top: 100px;
+        background: #454545;
+        .flex_center;
+        .container{
+             display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 100px;
+                h3{
+                    margin-right: 30px;
+                    .head;
+                    font-size: 24px;
+                    color: white;
+                }
+                form{
+                    width: 350px;
+                    display: flex;
+                    input{
+                        width: 100%;
+                        padding: 18px;
+                        border: none;
+                        outline: none;
+                        border-radius: 6px;
+                        color: black;
+                    }
+                    button{
+                        background: black;
+                        border-radius: 6px;
+                        border: none;
+                        padding: 18px 26px;
+                    }
+                }
+        }
+    }
+    >.container{
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 100px;
+        aside{
+            menu{
+                width: 100%;
+                margin-bottom: 70px;
+                .flex_between;
+            }
+        }
+    }
+}
+
+.modalWindow{
+    position: absolute;
+    width: 240px;
+    height: 100px;
+    background: white;
+    color: black;
+    top: 40px;
+    right: 0;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.modalWindow.active{
+    opacity: 1;
+}
