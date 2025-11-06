@@ -38,7 +38,7 @@ export default function FeedbackPage(){
                                 <img src={twopoint} alt="twopoint" />
                                 <p>{el.title}</p>
                                 <h4>{el.author}</h4>
-                                <span>{el.profession}</span>
+                                <span>{el.proffession}</span>
                             </div>
                         </SwiperSlide>
                     ))
