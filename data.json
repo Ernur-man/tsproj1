@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "img": "./digiency.webp",
+        "img": "tsproj1/digiency.webp",
         "title": "Hazel - Clean Minimalist Multi-Pu...",
         "price": 50,
         "sold": 258
     },
     {
         "id": 2,
-        "img": "./apolly.webp",
+        "img": "tsproj1/apolly.webp",
         "title": "Monstroid2 - Multipurpose Modular...",
         "price": 50,
         "sold": 258
