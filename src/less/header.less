@@ -4,7 +4,7 @@
 header{
     width: 100%;
     padding: 30px 24px 30px 24px;
-    z-index: 9999999999999;
+    z-index: 999;
     .container{
         box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
         background:  rgba(255, 255, 255, 1);
@@ -30,34 +30,49 @@ header{
             aside{
                 width: 100%;
                 padding-right: 20px;
-                .list{
-                    text-align: right;
+                .list {
                     width: 100%;
-                    color: black;
-                    position: absolute;
-                    background: rgba(255, 255, 255, 0.219);
-                    top: 100%;
-                    transform: translateX(-40px);
-                    padding: 10px;
-                    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.237);
-                    border-radius: 0 0 10px 10px;
-                    transition: 0.3s;
                     opacity: 0;
-                    li{
+                    visibility: hidden;
+                    pointer-events: none;
+
+                    position: absolute;
+                    top: 110%;
+                    left: 0;
+
+                    background: white;
+                    box-shadow: 3px 3px rgba(0, 0, 0, 0.18);
+                    color: black;
+                    padding: 15px;
+                    border-radius: 8px;
+                    transition: .25s ease;
+
+                    li {
                         margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
                 }
-                
-                .list .active{
-                    .list;
+
+                .list.active {
                     opacity: 1;
+                    visibility: visible;
+                    pointer-events: auto;
                 }
             }
             >div{
                 display: flex;
+                align-items: center;
                 margin-right: 13px;
                 padding: 12px;
                 font-size: 24px;
+                button{
+                    border: none;
+                    font-size: 18px;
+                    background: none;
+                }
             }
             .menu{
                     display: flex;
@@ -67,8 +82,9 @@ header{
                         font-size: 16px;
                     }
                 }
-            
+
         }
     }
+
 }
 

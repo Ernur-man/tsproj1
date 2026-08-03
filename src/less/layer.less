@@ -1,0 +1,76 @@
+@import '../less/reset.less';
+
+.layer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.267);
+    z-index: 999999999999999999999999999999999;
+    .flex_center;
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+    form{
+        width: 350px;
+        height: 350px;
+        text-align: center;
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        h2{
+            margin-bottom: 40px;
+        }
+        input{
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            border-radius: 30px;
+            outline: none;
+            font-size: 16px;
+        }
+        button{
+            padding: 14px;
+            border: none;
+            border-radius: 5px;
+            background:  linear-gradient(224.59deg, rgba(2, 131, 233, 1),rgba(252, 1, 202, 1) 100%);
+            color: white;
+            font-size: 14px;
+        }
+    }
+    span {
+        display: block;
+        margin-top: 6px;
+        margin-bottom: 12px;
+
+        color: #e53935;
+        font-size: 14px;
+        font-weight: 500;
+
+        background: #ffebee;
+        border: 1px solid #ffcdd2;
+        border-radius: 6px;
+
+        padding: 8px 12px;
+
+        animation: fadeIn .2s ease;
+    }
+}
+
+.layer.active{
+    display: block;
+    opacity: 1;
+    .flex_center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { userStore } from '../store/feedbackStore';
 import type { Users } from '../types/Users';
 import '../less/feedback.less'
-import twopoint from '../assets/twopoint.svg'
+import twopoint from '/twopoint.svg'
 import { Autoplay } from 'swiper/modules';
 
 export default function FeedbackPage(){

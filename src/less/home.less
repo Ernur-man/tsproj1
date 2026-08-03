@@ -12,8 +12,8 @@
     .elipse{
         width: 50%;
         position: absolute;
-        right: -130px;
-        top: -130px;
+        right: -10%;
+        top: -10%;
     }
     .container{
         width: 1200px;
@@ -35,45 +35,87 @@
                 .txt;
                 margin-bottom: 30px;
             }
-            form{
+            article{
+                width: 100%;
+                height: 150px;
                 display: flex;
-                input{
+                flex-direction: column;
+                position: relative;
+                .tips{
                     width: 100%;
-                    padding: 18px 14px;
-                    outline: none;
-                    border: none;
-                    border-radius: 5px;
-                    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
-                    background: var(--Primary color/#FFFFFF, rgba(255, 255, 255, 1));
+                    position: absolute;
+                    top: 50px;
+                    background: white;
+                    box-shadow: 6px 6px rgba(0, 0, 0, 0.187);
+                    padding: 10px;
+                    border-radius: 0 0 20px 20px;
+                    display: none;
                 }
-                button{
-                    padding: 14px;
-                    border: none;
-                    border-radius: 5px;
-                    background:  linear-gradient(224.59deg, rgba(2, 131, 233, 1),rgba(252, 1, 202, 1) 100%);
-                    .txt;
-                    color: white;
-                    font-size: 14px;
-                    .flex_center;
+                .tips.active{
+                    display: block;
+                }
+                form{
+                    display: flex;
+                    input{
+                        width: 100%;
+                        padding: 18px 14px;
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+                        background:  rgba(255, 255, 255, 1);
+                    }
+                    button{
+                        padding: 14px;
+                        border: none;
+                        border-radius: 5px;
+                        background:  linear-gradient(224.59deg, rgba(2, 131, 233, 1),rgba(252, 1, 202, 1) 100%);
+                        .txt;
+                        color: white;
+                        font-size: 14px;
+                        .flex_center;
+                    }
                 }
             }
-            &:nth-child(2){
-                width: 45%;
-                .square{
-                    transform: translateX(10px) translateY(-80px);
-                }
-                .angular{
-                    transform: translateX(140px) translateY(-80px);
-                }   
-                .net{
-                    transform: translateX(150px)  translateY(200px);
-                }
-                .vuew{
-                    transform: translateX(200px)translateY(100px);
-                }
-                .js{
-                    transform: translateX(-150px);
-                }
+        }
+        .hero-images {
+            width: 45%;
+            height: 30%;
+            position: relative;
+            img {
+                position: absolute;
+                z-index: 2;
+            }
+
+            .square {
+                width: 110px;
+                top: -50%;
+                left: -5%;
+            }
+
+            .angular {
+                width: 170px;
+                top: -65%;
+                right: 14%;
+                transform: translateX(-50%);
+            }
+
+            .js {
+                width: 150px;
+                top: 40%;
+                left: -12%;
+            }
+
+            .vuew {
+                width: 90px;
+                bottom: -50%;
+                left: 33%;
+            }
+
+            .net {
+                width: 160px;
+                top: 40%;
+                right: 8%;
             }
         }
     }
