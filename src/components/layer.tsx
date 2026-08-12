@@ -2,6 +2,7 @@ import { useEffect, useState} from 'react';
 import '../less/layer.less';
 import { useForm} from 'react-hook-form';
 import type { SubmitHandler } from 'react-hook-form';
+import axios from 'axios';
 
 type LayerProps = {
     active: boolean;
@@ -16,12 +17,20 @@ export default function Layer({active, setActive}:LayerProps){
     const {register, handleSubmit, reset, formState: {errors}} = useForm<FormData>()
     const [success, setSuccess] = useState<boolean>(true);
 
-    const onSubmit: SubmitHandler<FormData> = ()=>{
+
+    const onSubmit: SubmitHandler<FormData> = (data)=>{
         setSuccess(false);
-        setTimeout(()=>{
-            reset()
-            setSuccess(true)
-        }, 1000)
+        let name = data.name;
+        let email = data.email;
+        axios.post("https://formspree.io/f/xljrdpbg", {
+            name: name,
+            email: email
+        })
+        .then(()=>{
+            setSuccess(true);
+            reset();
+        })
+        .catch((e)=>alert("Error: " + e))
     }
 
     useEffect(() => {
